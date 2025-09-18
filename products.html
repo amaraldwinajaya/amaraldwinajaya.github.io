@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PT. Amaral Dwina Jaya - Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - PT. Amaral Dwina Jaya</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="bg-gradient-to-b from-blue-100 to-green-100 flex flex-col min-h-screen">
   <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <header class="bg-blue-200 shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="logo.png" alt="Company Logo" class="h-10 w-10 object-contain" />
-        <h1 class="text-xl font-bold text-gray-800">PT. Amaral Dwina Jaya</h1>
+        <img src="logo.png" class="h-10 w-10" alt="Logo">
+        <h1 class="text-lg font-bold">PT. Amaral Dwina Jaya</h1>
       </div>
-      <nav class="space-x-4">
+      <nav class="space-x-6">
         <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
         <a href="products.html" class="text-blue-600 font-semibold">Products</a>
         <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Body -->
-  <main class="flex-grow container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">
-        <h3 class="text-xl font-bold mb-2">Product 1</h3>
-        <p class="text-gray-600">Description of product 1.</p>
+  <!-- Content -->
+  <main class="flex-grow container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-10">Produk Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="font-bold mb-2">Drum Belt Conveyor</h3>
+        <p>Produk berkualitas tinggi untuk kebutuhan industri Anda.</p>
       </div>
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">
-        <h3 class="text-xl font-bold mb-2">Product 2</h3>
-        <p class="text-gray-600">Description of product 2.</p>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="font-bold mb-2">Bearing, Pipe, Plate</h3>
+        <p>Suku cadang mekanik yang tahan lama dan terpercaya.</p>
       </div>
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">
-        <h3 class="text-xl font-bold mb-2">Product 3</h3>
-        <p class="text-gray-600">Description of product 3.</p>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="font-bold mb-2">Fire & Safety Equipment</h3>
+        <p>Peralatan keselamatan sesuai standar industri.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="font-bold mb-2">Tools & Spareparts</h3>
+        <p>Berbagai macam tools dan spareparts sesuai kebutuhan.</p>
       </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white mt-10">
-    <div class="container mx-auto px-4 py-6 text-center">
-      <p>&copy; 2025 PT. Amaral Dwina Jaya. All rights reserved.</p>
-    </div>
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+    <p class="text-sm">&copy; 2025 PT. Amaral Dwina Jaya. All rights reserved.</p>
   </footer>
 </body>
 </html>
-

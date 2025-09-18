@@ -1,51 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PT. Amaral Dwina Jaya - Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen bg-gradient-to-b from-blue-100 to-green-100">
   <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <header class="bg-blue-200 shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="logo.png" alt="Company Logo" class="h-10 w-10 object-contain" />
-        <h1 class="text-xl font-bold text-gray-800">PT. Amaral Dwina Jaya</h1>
+        <img src="assets/logo.png" alt="Company Logo" class="h-10 w-10 object-contain" />
+        <h1 class="text-lg sm:text-xl font-bold text-gray-800">PT. Amaral Dwina Jaya</h1>
       </div>
-      <nav class="space-x-4">
+      <nav class="space-x-6">
         <a href="index.html" class="text-blue-600 font-semibold">Home</a>
         <a href="products.html" class="text-gray-700 hover:text-blue-600">Products</a>
         <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Body -->
-  <main class="flex-grow">
-    <section class="bg-blue-600 text-white py-20">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-4">Welcome to PT. Amaral Dwina Jaya</h2>
-        <p class="text-lg">Your trusted partner in providing quality products and services.</p>
+  <!-- Hero Section -->
+  <section class="relative h-[400px] bg-cover bg-center flex items-center justify-center text-center text-white" style="background-image: url('assets/hero.jpg'); margin-top:64px;">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 max-w-2xl px-4">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">PT. Amaral Dwina Jaya</h2>
+      <p class="mb-6">Solusi Terpercaya di Bidang Jasa Tenaga Kerja, Kontraktor, dan Pengadaan Barang. <br> Berdiri sejak 2022 untuk melayani mitra swasta dan pemerintahan.</p>
+      <div class="space-x-4">
+        <a href="products.html" class="bg-blue-600 text-white px-6 py-2 rounded-md shadow hover:bg-blue-700">Lihat Produk</a>
+        <a href="services.html" class="bg-transparent border border-white px-6 py-2 rounded-md hover:bg-white hover:text-black">Layanan Kami</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="py-12 container mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-6">About Us</h3>
-      <p class="text-center text-gray-700 max-w-2xl mx-auto">
-        PT. Amaral Dwina Jaya is committed to delivering excellence in products and services.
-        We strive to build long-term partnerships with our clients through integrity and professionalism.
-      </p>
-    </section>
-  </main>
+  <!-- Tentang Kami -->
+  <section class="py-12 container mx-auto px-4">
+    <h3 class="text-2xl font-bold text-center mb-6">Tentang Kami</h3>
+    <p class="text-center text-gray-700 max-w-4xl mx-auto leading-relaxed">
+      PT. Amaral Dwina Jaya adalah perusahaan yang bergerak di bidang penyediaan jasa tenaga kerja, leveransir, fabrikasi, dan supplier. 
+      Didirikan pada tahun 2022, kami menyediakan solusi bisnis yang inovatif dengan mengutamakan mutu dan kepercayaan demi kelangsungan bisnis yang harmonis dan berkelanjutan. 
+      Saat ini kami aktif bermitra dengan beberapa industri besar diantaranya yaitu induk perusahaan <b>PT. Solusi Bangun Andalas</b> dan kami selalu berkomitmen menjamin kelancaran operasional mitra bisnis kami.
+    </p>
+  </section>
+
+  <!-- Visi, Misi, Nilai -->
+  <section class="py-12 container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="p-6 rounded-xl text-center shadow bg-gradient-to-b from-purple-300 to-green-300">
+      <h4 class="text-lg font-bold mb-2">Visi</h4>
+      <p>Menjadi Perusahaan yang Berkembang dan Bermanfaat untuk Memenuhi Kebutuhan Mitra Kami.</p>
+    </div>
+    <div class="p-6 rounded-xl text-center shadow bg-gradient-to-b from-gray-200 to-green-300">
+      <h4 class="text-lg font-bold mb-2">Misi</h4>
+      <ul class="list-disc list-inside text-left">
+        <li>Membangun bisnis dan aset produktif secara terintegrasi untuk memberikan manfaat luas.</li>
+        <li>Memperhatikan keselamatan kerja & kelestarian lingkungan.</li>
+        <li>Membina SDM, berinovasi, & membangun jaringan yang kuat.</li>
+        <li>Meningkatkan mutu pelayanan di bidang mekanikal & jasa tenaga kerja.</li>
+      </ul>
+    </div>
+    <div class="p-6 rounded-xl text-center shadow bg-gradient-to-b from-purple-300 to-blue-300">
+      <h4 class="text-lg font-bold mb-2">Nilai</h4>
+      <p>Cepat, Tanggap, dan Penuh Tanggung Jawab.</p>
+    </div>
+  </section>
+
+  <!-- Bidang Layanan -->
+  <section class="py-12 container mx-auto px-6">
+    <h3 class="text-2xl font-bold text-center mb-8">Bidang Layanan</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+      <div class="p-6 border rounded-lg shadow">
+        <h4 class="font-bold mb-4">Jasa Kontrak</h4>
+        <ul class="list-disc list-inside text-left">
+          <li>Penyedia jasa tenaga kerja</li>
+          <li>Mekanical: fabrikasi, replace, install, modifikasi spareparts</li>
+        </ul>
+      </div>
+      <div class="p-6 border rounded-lg shadow">
+        <h4 class="font-bold mb-4">Pengadaan Barang</h4>
+        <ul class="list-disc list-inside text-left">
+          <li>Drum Belt Conveyor</li>
+          <li>Bearing, Pipe, Plate</li>
+          <li>Fire & Safety Equipment</li>
+          <li>Tools & Spareparts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 bg-blue-600 text-white text-center">
+    <h3 class="text-2xl font-bold mb-4">Bekerja Sama dengan Kami</h3>
+    <p class="mb-6 max-w-2xl mx-auto">Kami berkomitmen memberikan pelayanan terbaik dengan sumber daya berkualitas dan berpengalaman. Hubungi kami untuk solusi produk dan jasa yang sesuai kebutuhan Anda.</p>
+    <a href="contact.html" class="bg-white text-blue-600 px-6 py-2 rounded-md font-semibold shadow hover:bg-gray-100">Hubungi Kami</a>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white mt-10">
-    <div class="container mx-auto px-4 py-6 text-center">
-      <p>&copy; 2025 PT. Amaral Dwina Jaya. All rights reserved.</p>
-    </div>
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p class="text-sm">
+      Alamat: JL Banda Aceh Meulaboh, km. 115, Keude Blang, Lambaro Kueh, Lhoknga, Aceh Besar. 23353 <br>
+      Hp. 08137736000 <br>
+      &copy; 2025 PT. Amaral Dwina Jaya. All rights reserved.
+    </p>
   </footer>
 </body>
 </html>
-

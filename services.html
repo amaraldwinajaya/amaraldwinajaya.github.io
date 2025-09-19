@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - PT. Amaral Dwina Jaya</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan Kami</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-b from-blue-100 to-green-100 flex flex-col min-h-screen">
+<body class="bg-gradient-to-b from-blue-100 to-green-100 min-h-screen flex flex-col">
   <!-- Header -->
   <header class="bg-blue-200 shadow-md fixed w-full z-50">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="logo.png" class="h-10 w-10" alt="Logo">
-        <h1 class="text-lg font-bold">PT. Amaral Dwina Jaya</h1>
+        <img src="logo.png" alt="Logo" class="h-10 w-10 object-contain" />
+        <h1 class="text-lg sm:text-xl font-bold text-gray-800">PT. Amaral Dwina Jaya</h1>
       </div>
       <nav class="space-x-6">
         <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
@@ -25,29 +25,50 @@
 
   <!-- Content -->
   <main class="flex-grow container mx-auto px-6 py-20">
-    <h2 class="text-3xl font-bold text-center mb-10">Layanan Kami</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="font-bold mb-3">Jasa Kontrak</h3>
-        <ul class="list-disc list-inside">
-          <li>Penyedia jasa tenaga kerja</li>
-          <li>Mekanical: fabrikasi, replace, install, modifikasi spareparts</li>
-        </ul>
+    <h2 class="text-2xl font-bold text-center mb-10">Layanan Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Layanan 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="modifikasi.png" alt="Jasa modifikasi sparepart" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Jasa modifikasi sparepart</h3>
+          <p class="text-gray-600 text-sm mt-2">Modifikasi sparepart sesuai yang diinginkan.</p>
+        </div>
       </div>
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="font-bold mb-3">Pengadaan Barang</h3>
-        <ul class="list-disc list-inside">
-          <li>Drum Belt Conveyor</li>
-          <li>Bearing, Pipe, Plate</li>
-          <li>Fire & Safety Equipment</li>
-          <li>Tools & Spareparts</li>
-        </ul>
+
+      <!-- Layanan 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="tenaga-kerja.png" alt="Penyedia jasa tenaga kerja" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Penyedia jasa tenaga kerja</h3>
+          <p class="text-gray-600 text-sm mt-2">Menyediakan tenaga kerja profesional seperti teknisi atau operator.</p>
+        </div>
       </div>
+
+      <!-- Layanan 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="fabrikasi.png" alt="Fabrikasi mekanikal" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Fabrikasi mekanikal</h3>
+          <p class="text-gray-600 text-sm mt-2">Layanan fabrikasi, replace, install, dan modifikasi spareparts industri.</p>
+        </div>
+      </div>
+
+      <!-- Layanan 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="pengadaan.png" alt="Pengadaan barang" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold">Pengadaan barang</h3>
+          <p class="text-gray-600 text-sm mt-2">Penyedia barang industri mulai dari heavy equipment, tools, spareparts, hingga safety equipment.</p>
+        </div>
+      </div>
+
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+  <footer class="bg-gray-900 text-white text-center py-6">
     <p class="text-sm">&copy; 2025 PT. Amaral Dwina Jaya. All rights reserved.</p>
   </footer>
 </body>
